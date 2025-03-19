@@ -145,38 +145,39 @@
               <p>
                <!--Motivation of the project-->
                
-               The "birthday paradox" is a probability problem that says in a group of just 23 people, 
-               there is a greater than 50% chance that at least two people share the same birthday. 
-               The paradox arises because people tend to underestimate how quickly the probabiity of having
-               a shared birthday increases as the size of the group grows. 
+               The "birthday paradox" is a probability problem that says in a group of just 23 people, there is a greater than 50% chance that at least two people share the same birthday. 
+               The paradox arises because people tend to underestimate how quickly the probability of having a shared birthday increases as the size of the group grows.
+ 
               
               </p>
               <p>
                <!--Functional requirements/what the project does-->
-               The goal of this project was to write code to test the birthday paradox through a series of experiments.
-               The application runs experiments with differient group sizes to demonstrate how rapidly the likelyhood of shared birthdays increase with group size. 
-               This project is made up of several parts. Simulation.java runs the simulation by creating Experiment objects of different group sizes (5-100 people) and displays the percentage of trials with shared birthdays. 
-              Experiment.java represents a single experiment and calculates the percentage of trials (20 per group size) that resulted in at least one shared birthday.
-               Trial.java represents a single trial within an experiment and creates a certain number of people (with random birthdays) and determines wether any two people in the group share a birthday. 
-               Birthday.java represents one persons birthday (month and day) and accounts for different month lengths. The Birthday class generates random, valid birthdays to determine if two are the same. 
-               These classes work together in a hierachy to bring this probabilty theory to life. Simulation creates multiple Experiments, each Experiment runs multiple Trials, and each Trial creates multiple Birthday objects to simulate groups of different sizes.  
+               The goal of this project was to write code to test the birthday paradox through a series of experiments. 
+               The application runs experiments with different group sizes to demonstrate how rapidly the likelihood of shared birthdays increase with group size. 
+               This project is made up of several parts. 
+               Simulation.java runs the simulation by creating Experiment objects of different group sizes (5-100 people) and displays the percentage of trials with shared birthdays. 
+               Experiment.java represents a single experiment and calculates the percentage of trials (20 per group size) that resulted in at least one shared birthday.
+                Trial.java represents a single trial within an experiment and creates a certain number of people (with random birthdays) and determines whether any two people in the group share a birthday. Birthday.java represents one person's birthday (month and day) and accounts for different month lengths. 
+                The Birthday class generates random, valid birthdays to determine if two are the same. These classes work together in a hierarchy to bring this probability theory to life. 
+                Simulation creates multiple Experiments, each Experiment runs multiple Trials, and each Trial creates multiple Birthday objects to simulate groups of different sizes. 
+                This simulator provides valuable insights into this famously counterintuitive probability theory.
                This simulator provides valuable insights into this famously counterintuitive probability theory. 
               
               </p>
               In implementing the Birthday Paradox simulator, I focused on developing the functionality within the class structure that my partner had worked to establish. 
               My main goal was working to help implement the logic that made each class behave together properly and function successfully. 
               When it came to developing tests for these classes, I worked mainly on testing the Birthday class and the Experiment class. 
-              To do this, I implemented Mockito to create mock objects that simulated a variety of different scenarios without relying on randomness, 
-              which helped me achieve consistent and reliable test reulsts. Throughout the project, my parner and I utilized pair programming which helped improve the quality of our code 
-              and our understanding of the application significantlty.
-              
+              To do this, I implemented Mockito to create mock objects that simulated a variety of different scenarios without relying on randomness, which helped me achieve consistent and reliable test results. 
+              Throughout the project, my partner and I utilized pair programming which helped improve the quality of our code and our understanding of the application significantly.
+
               <p>
               
               </p>
               <p>
-            Through this project, I significantly strengthened my Java testing skills, specfically in using mocking to create reliable test enviornments for processes that are normally random. 
-            I gained valuable pair programming expierience that helped me develop my communication skills when discussing technical concepts and expressing my ideas during the coding process. 
-            Working on the Birthday Paradox Simulator helped me to deepen my understanding of object-oriented design principles, as it challenged me to write clean code and improve upon how I write commit messages. 
+                Throughout this project, I significantly strengthened my Java testing skills, specifically in using mocking to create reliable test environments for processes that are normally random. 
+                I gained valuable pair programming experience that helped me develop my communication skills when discussing technical concepts and expressing my ideas during the coding process. 
+                Working on the Birthday Paradox Simulator helped me to deepen my understanding of object-oriented design principles, as it challenged me to write clean code and improve upon how I write commit messages.
+
 
               </p>
 
