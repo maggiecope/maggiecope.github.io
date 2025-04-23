@@ -156,7 +156,7 @@
               </p>
               <p>
                <!--Functional requirements/what the project does-->
-               The goal of this project was to write code to test the birthday paradox through a series of experiments. 
+               The goal of this project was to write code to test the birthday paradox through a series of experiments.
                The application runs experiments with different group sizes to demonstrate how rapidly the likelihood of shared birthdays increase with group size. 
                This project is made up of several parts. 
                Simulation.java runs the simulation by creating Experiment objects of different group sizes (5-100 people) and displays the percentage of trials with shared birthdays. 
@@ -187,6 +187,45 @@
 
 
             </div>
+
+            <h3 style="font-weight: bold;">Elevator Simulator</h3>
+            <p>
+              <!--Motivation of the project-->
+              The Elevator Simulator project involved writing code to develop ad elevator simulator that models how different types of elevators operate in a building.
+              Each elevator has a unique set of rules including what floors they service and how many passengers can be on an elevator at a time.
+              A scheduler assigns the calls to the best elevator available. The simulator moves the elevators on each round and shows what elevators are moving, stopping, or waiting and how many people are on each.
+              This project helps to understand how an elevator system functions in real life.
+
+
+            </p>
+            <p>
+              <!--Functional requirements/what the project does-->
+              The goal of this project was to write code to simulate how different types of elevators function on buildings with multiple floors using Test Driven Development, maintaining best object-oriented practices, SOLID principles, and clean code in mind.
+              The project included 4 different types of elevators: Standard Elevators, Freight Elevators, Pent House Elevator, and Express elevator.
+              Each elevator has specific policies that must be kept including how many passengers it can have, when it can accept calls, what floors it can travel to.
+              For example the Penthouse elevator only travels between the first floor and the top floor. The express elevator skips the middle floors.
+              The scheduler assigns new calls to the appropriate elevator based on their current state which includes their position, direction, and occupancy.
+              The design of the code follows OOP principles, with a base elevator class that defines the common behavior of all elevators.
+              The ElevatorFactory creates different elevator types using the factory pattern with specialized subclasses for each specific elevator type and their unique behaviors.
+              The Scheduler uses a Strategy design pattern with SimpleScheduler and ComplexScheduler implementations with different algorithm to assign calls to elevators.
+              The Simulator controls the program, it initializes the program with 7 command-line arguments. It creates elevators, and runs the simulation in rounds.
+              Each round involves assigning calls to the elevators and moving the elevators and continues until all the calls are handled and each of the elevators have returned to the first floor.
+
+            </p>
+            In implementing the Elevator simulator, I focused on developing the Elevator abstract class and the specific subclasses. I used Test Driven development to first work
+            on the implementing the abstract Elevator. After I finished with the base Elevator I was able to create the specific subclasses and used override for how the different elevators were able to choose when the accepted calls on not based on their specific qualities.
+            This structure made it easier to expand and test each of the different elevator types individually/
+
+
+            <p>
+
+            </p>
+            <p>
+              Finally, what did you learn through this project or is there anything that it helped you to get better at.
+              Throughout this project, I strengthened my Test Driven Development Skills by writing tests before implementing the code.
+              This strategy helped me to debug my code as I was working on it and develop each part of my program separately.
+              My partner and I utilized pair programming which helped both of us give good feedback and constructive comments on each other code and understand the parts of the code each other had written.
+            </p>
 
             
 
