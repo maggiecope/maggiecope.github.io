@@ -54,6 +54,48 @@
     .img-fluid {
       margin-bottom: 20px;
       max-width: 100%;
+      display: block;
+    }
+
+    /* Consistent image containers */
+    .image-container {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .image-container img {
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-height: 400px;
+      width: auto;
+    }
+
+    .image-container .caption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #666;
+      font-style: italic;
+    }
+
+    /* Image grids for multiple images */
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .image-grid .grid-item {
+      flex: 1 0 300px;
+      text-align: center;
+    }
+
+    /* Featured project image */
+    .featured-image {
+      max-height: 350px;
+      width: auto;
+      margin: 0 auto 20px auto;
+      display: block;
     }
 
     /* Consistent section spacing */
@@ -121,8 +163,14 @@
     <div class="container" style="padding-top: 30px">
       <div class="row">
         <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-          <img src="images/seniorphoto.JPG" alt="Senior Photo" class="img-fluid" width="300">
-          <img src="images/Walter.jpeg" alt="Walter" class="img-fluid" width="300">
+          <div class="image-container">
+            <img src="images/seniorphoto.JPG" alt="Senior Photo" class="img-fluid">
+            <div class="caption">Senior Photo</div>
+          </div>
+          <div class="image-container">
+            <img src="images/Walter.jpeg" alt="Walter" class="img-fluid">
+            <div class="caption">My dog Walter</div>
+          </div>
         </div>
         <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
           <div class="mb-4">
@@ -166,8 +214,16 @@
 
       <div class="row">
         <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-          <img src="images/birthday-intro.png" alt="Birthday sign" class="img-fluid">
-          <img src="images/Birthday_Paradox.svg" alt="paradox graph" class="img-fluid">
+          <div class="image-grid">
+            <div class="grid-item">
+              <img src="images/birthday-intro.png" alt="Birthday sign" class="img-fluid">
+              <div class="caption">Birthday Paradox Introduction</div>
+            </div>
+            <div class="grid-item">
+              <img src="images/Birthday_Paradox.svg" alt="paradox graph" class="img-fluid">
+              <div class="caption">Birthday Paradox Probability Graph</div>
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
@@ -213,7 +269,10 @@
           </div>
 
           <div class="project-section">
-            <img src="images/elevator.jpeg" alt="elevator image" class="img-fluid">
+            <div class="image-container">
+              <img src="images/elevator.jpeg" alt="elevator image" class="img-fluid">
+              <div class="caption">Elevator Simulator</div>
+            </div>
             <h3>Elevator Simulator</h3>
 
             <p>
@@ -286,7 +345,10 @@
               Our project implements multiple design patterns so that our project architecture is flexible and maintainable.
             </p>
 
-            <img src="images/decoratorpattern.png" alt="decorator pattern" class="img-fluid">
+            <div class="image-container">
+              <img src="images/decoratorpattern.png" alt="decorator pattern" class="img-fluid">
+              <div class="caption">Decorator Pattern Diagram</div>
+            </div>
 
             <h3>Decorator Pattern</h3>
             <p>Our pizza program uses the Decorator pattern for adding toppings, which allows for:</p>
@@ -337,6 +399,12 @@
               I implemented these features following test-driven development, by writing tests before implementing each feature to ensure they were correct before moving on.
               I have never implemented the Decorator Pattern officially before so this project was a great learning experience for me where I got to challenge my abilities to implement different design patterns together.
             </p>
+
+            <!-- Add your Pizza System Diagram here -->
+            <div class="image-container">
+              <img src="images/pizza-system-diagram.png" alt="Pizza System Class Diagram" class="img-fluid">
+              <div class="caption">Pizza Builder System - Class Diagram</div>
+            </div>
           </div>
         </div>
       </div>
