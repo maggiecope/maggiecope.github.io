@@ -192,7 +192,7 @@
             <h3 style="font-weight: bold;">Elevator Simulator</h3>
             <p>
               <!--Motivation of the project-->
-              The Elevator Simulator project involved writing code to develop ad elevator simulator that models how different types of elevators operate in a building.
+              The Elevator Simulator project involved writing code to develop an elevator simulator that models how different types of elevators operate in a building.
               Each elevator has a unique set of rules including what floors they service and how many passengers can be on an elevator at a time.
               A scheduler assigns the calls to the best elevator available. The simulator moves the elevators on each round and shows what elevators are moving, stopping, or waiting and how many people are on each.
               This project helps to understand how an elevator system functions in real life.
@@ -252,35 +252,43 @@
 
             <h3>Decorator Pattern</h3>
             Our pizza program uses the Decorator pattern for adding toppings, which allows for:
-            Flexibility: Can handle unlimited topping combinations
-            Maintainable: Separates the core pizza functionality from the optional added toppings
-            Extension: We can easily add new toppings in the future without modifying existing code
-            <p>
+            <ol>
+              <li>Flexibility: Can handle unlimited topping combinations
+              <li>Maintainable: Separates the core pizza functionality from the optional added toppings
+              <li> Extension: We can easily add new toppings in the future without modifying existing code
+            </ol>
+              <p>
 
             <h3>Simple Factory Pattern</h3>
             Pizza Factory implements the Simple Factory pattern to create standard pizza styles
-            Encapsulation: Hides the complexity of creating different styles of pizza
-            Single Responsibility Principle: Keeps pizza creation logic in one place
-            Consistency: Ensures pizzas are created with the correct default ingredients
+            <ol>
+            <li>Encapsulation: Hides the complexity of creating different styles of pizza
+            <li> Single Responsibility Principle: Keeps pizza creation logic in one place
+            <li>Consistency: Ensures pizzas are created with the correct default ingredients
+            </ol>
             <p>
 
             <h3>Strategy Pattern</h3>
             To deal with payment processing, we implemented the Strategy pattern:
-            Flexibility: Allows users to choose between payment methods (cash or credit)
-            Extension: Easy to add new payments in the future
-            Testability: Able to test payment strategies individually
+            <ol>
+              <li>Flexibility: Allows users to choose between payment methods (cash or credit)
+              <li>Extension: Easy to add new payments in the future
+              <li>Testability: Able to test payment strategies individually
+            </ol>
             <p>
 
             We chose Java for implementation because it is effective for using object-oriented programming to implement design patterns.
             Java uses interfaces and inheritance to emphasize clear relationships between components, allowing us to make our code maintainable and readable.
             <p>
-            The overall design of our project includes:
-            Pizza interface: Defines core functionality.
-            SimplePizza: Concrete implementation of Pizza interface.
-            PizzaFactory: Creates standard pizza styles (New York, Chicago, Neapolitan, and Custom)
-            Toppings: Decorator hierarchy that wraps pizzas with additional ingredients
-            Payment Strategies: implement common interface for different payment methods (cash, card)
 
+            The overall design of our project includes:
+            <ol>
+            <li>Pizza interface: Defines core functionality.
+            <li>SimplePizza: Concrete implementation of Pizza interface.
+            <li>PizzaFactory: Creates standard pizza styles (New York, Chicago, Neapolitan, and Custom)
+            <li>Toppings: Decorator hierarchy that wraps pizzas with additional ingredients
+            <li>Payment Strategies: implement common interface for different payment methods (cash, card)
+          </ol>
             <p>
               I worked on implementing the core architecture of our project. I focused on:
               The Pizza interface and the SimplePizza concrete class.
