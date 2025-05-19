@@ -1,386 +1,398 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
+  <title>Your personal website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Your personal website</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!-- Added additional CSS for cleaner formatting -->
+  <style>
+    /* Consistent heading styles */
+    h2 {
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      color: #333;
+    }
 
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    h3 {
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      color: #333;
+    }
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    /* Better spacing and list formatting */
+    p {
+      margin-bottom: 20px;
+    }
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    ol, ul {
+      margin-bottom: 20px;
+      padding-left: 25px;
+    }
 
-    <link rel="stylesheet" href="css/aos.css">
+    li {
+      margin-bottom: 10px;
+    }
 
-    <link rel="stylesheet" href="css/style.css">
+    /* Image spacing and sizing */
+    .img-fluid {
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
 
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    /* Consistent section spacing */
+    .site-section {
+      padding: 60px 0;
+    }
 
+    /* Project section formatting */
+    .project-section {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
 
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
+    .project-section:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+<div id="overlayer"></div>
+<div class="loader">
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+
+<div class="site-wrap">
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6 col-xl-2">
+          <h1 class="mb-0 site-logo"><a href="#" class="h2 mb-0">Maggie Cope</a></h1>
+        </div>
+
+        <div class="col-12 col-md-10 d-none d-xl-block">
+          <nav class="site-navigation position-relative text-right" role="navigation">
+            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+              <li><a href="#about-section" class="nav-link">About</a></li>
+              <li><a href="#projects-section" class="nav-link">Projects</a></li>
+              <li><a href="#contact-section" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;">
+          <a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <div class="site-section cta-big-image border-bottom" id="about-section">
+    <div class="container" style="padding-top: 30px">
+      <div class="row">
+        <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+          <img src="images/seniorphoto.JPG" alt="Senior Photo" class="img-fluid" width="300">
+          <img src="images/Walter.jpeg" alt="Walter" class="img-fluid" width="300">
+        </div>
+        <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+          <div class="mb-4">
+            <h2>About Me</h2>
+            <p>
+              Hi! I'm Maggie Cope! I'm from Bethesda, Maryland. I am a third-year student at the University of San Diego, pursuing a Bachelor of Art in Computer Science and a Bachelor of Business Administration in Business Administration.
+            </p>
+
+            <h3>Student Tech</h3>
+            <p>
+              I currently work as a Student Technician at USD's ITS Help Desk.
+              I provide comprehensive technical support to students, faculty, and staff, efficiently resolving a diverse range of IT escalations related to USD's internal software and customer service.
+              I manage several cases daily through various channels, including phone support, in-person assistance, and email communication.
+              I collaborate closely with a team of student technicians and analysts to ensure optimal customer service while addressing both software and hardware issues.
+            </p>
+
+            <h3>Summer Internship</h3>
+            <p>
+              This summer I will be working at the National Retail Federation as a Research Intern. I will be supporting NRF's Research team with survey research, data analysis, research
+              communication, and data visualization.
+            </p>
+
+            <h3>Hobbies</h3>
+            <p>
+              I love hot yoga, the beach, listening to music, and going on walks with my dog Walter.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="#" class="h2 mb-0">Maggie Cope</a></h1>
-          </div>
-
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#about-section" class="nav-link">About</a></li>
-                <li><a href="#projects-section" class="nav-link">Projects</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
-
+  <!-- Projects Section -->
+  <section class="site-section border-bottom" id="projects-section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Projects</h2>
         </div>
       </div>
 
-    </header>
-
-
-
-
-    <div class="site-section cta-big-image border-bottom" id="about-section">
-      <div class="container" style="padding-top: 30px">
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-
-            <img src="images/seniorphoto.JPG" alt="Senior Photo" class="img-fluid" width="300">
-          </p>
-            <img src="images/Walter.jpeg" alt="Walter" class="img-fluid" width="300">
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <p>
-                <h3 style="font-weight: bold;">About Me</h3>
-              </p>
-                Hi! I'm Maggie Cope! I'm from Bethesda, Maryland. I am a third-year student at the University of San Diego, pursuing a Bachelor of Art in Computer Science and a Bachelor of Business Administration in Business Administration.
-              <p>
-               <h2 style="font-weight: bold;">Student Tech</h2>
-               </p> 
-               I currently work as a Student Technician at USD's ITS Help Desk. 
-               I provide comprehensive technical support to students, faculty, and staff, efficiently resolving a diverse range of IT escalations related to USD's internal software and customer service. 
-               I manage several cases daily through various channels, including phone support, in-person assistance, and email communication. 
-               I collaborate closely with a team of student technicians and analysts to ensure optimal customer service while addressing both software and hardware issues.
-              <p>
-               <h2 style="font-weight: bold;">Summer Internship</h2>
-
-              </p>
-                This summer I will be working at the National Retail Federation as a Research Intern. I will be supporting NRF's Research team with survey research, data analysis, research 
-                communication, and data visualization.
-      
-               </p>
-                <h2 style="font-weight: bold;">Hobbies</h2>
-               <p>
-                I love hot yoga, the beach, listening to music, and going on walks with my dog Walter. 
-
-
-            </div>
-
-            
-
-          </div>
+      <div class="row">
+        <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+          <img src="images/birthday-intro.png" alt="Birthday sign" class="img-fluid">
+          <img src="images/Birthday_Paradox.svg" alt="paradox graph" class="img-fluid">
         </div>
-      </div>
-    </div>
 
-
-
-    <section class="site-section border-bottom" id="projects-section">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Projects</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-          
-            <img src="images/birthday-intro.png" alt="Birthday sign" class="img-fluid">
-          </p>
-            <img src="images/Birthday_Paradox.svg" alt="paradox graph" class="img-fluid">
-
-          
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h3 style="font-weight: bold;">Birthday Paradox Simulator</h3>
-              <p>
-               <!--Motivation of the project-->
-               
-               The "birthday paradox" is a probability problem that says in a group of just 23 people, there is a greater than 50% chance that at least two people share the same birthday. 
-               The paradox arises because people tend to underestimate how quickly the probability of having a shared birthday increases as the size of the group grows.
- 
-              
-              </p>
-              <p>
-               <!--Functional requirements/what the project does-->
-               The goal of this project was to write code to test the birthday paradox through a series of experiments.
-               The application runs experiments with different group sizes to demonstrate how rapidly the likelihood of shared birthdays increase with group size. 
-               This project is made up of several parts. 
-               Simulation.java runs the simulation by creating Experiment objects of different group sizes (5-100 people) and displays the percentage of trials with shared birthdays. 
-               Experiment.java represents a single experiment and calculates the percentage of trials (20 per group size) that resulted in at least one shared birthday.
-                Trial.java represents a single trial within an experiment and creates a certain number of people (with random birthdays) and determines whether any two people in the group share a birthday. Birthday.java represents one person's birthday (month and day) and accounts for different month lengths. 
-                The Birthday class generates random, valid birthdays to determine if two are the same. These classes work together in a hierarchy to bring this probability theory to life. 
-                Simulation creates multiple Experiments, each Experiment runs multiple Trials, and each Trial creates multiple Birthday objects to simulate groups of different sizes. 
-                This simulator provides valuable insights into this famously counterintuitive probability theory.
-               This simulator provides valuable insights into this famously counterintuitive probability theory. 
-              
-              </p>
-              In implementing the Birthday Paradox simulator, I focused on developing the functionality within the class structure that my partner had worked to establish. 
-              My main goal was working to help implement the logic that made each class behave together properly and function successfully. 
-              When it came to developing tests for these classes, I worked mainly on testing the Birthday class and the Experiment class. 
-              To do this, I implemented Mockito to create mock objects that simulated a variety of different scenarios without relying on randomness, which helped me achieve consistent and reliable test results. 
-              Throughout the project, my partner and I utilized pair programming which helped improve the quality of our code and our understanding of the application significantly.
-
-              <p>
-              
-              </p>
-              <p>
-                Throughout this project, I significantly strengthened my Java testing skills, specifically in using mocking to create reliable test environments for processes that are normally random. 
-                I gained valuable pair programming experience that helped me develop my communication skills when discussing technical concepts and expressing my ideas during the coding process. 
-                Working on the Birthday Paradox Simulator helped me to deepen my understanding of object-oriented design principles, as it challenged me to write clean code and improve upon how I write commit messages.
-
-
-              </p>
-
-
-            </div>
-            <img src="images/elevator.jpeg" alt="elevator image" class="img-fluid">
-
-            <h3 style="font-weight: bold;">Elevator Simulator</h3>
+        <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-section">
+            <h3>Birthday Paradox Simulator</h3>
             <p>
-              <!--Motivation of the project-->
+              The "birthday paradox" is a probability problem that says in a group of just 23 people, there is a greater than 50% chance that at least two people share the same birthday.
+              The paradox arises because people tend to underestimate how quickly the probability of having a shared birthday increases as the size of the group grows.
+            </p>
+
+            <p>
+              The goal of this project was to write code to test the birthday paradox through a series of experiments.
+              The application runs experiments with different group sizes to demonstrate how rapidly the likelihood of shared birthdays increase with group size.
+              This project is made up of several parts:
+            </p>
+
+            <ul>
+              <li>Simulation.java runs the simulation by creating Experiment objects of different group sizes (5-100 people) and displays the percentage of trials with shared birthdays.</li>
+              <li>Experiment.java represents a single experiment and calculates the percentage of trials (20 per group size) that resulted in at least one shared birthday.</li>
+              <li>Trial.java represents a single trial within an experiment and creates a certain number of people (with random birthdays) and determines whether any two people in the group share a birthday.</li>
+              <li>Birthday.java represents one person's birthday (month and day) and accounts for different month lengths.</li>
+            </ul>
+
+            <p>
+              The Birthday class generates random, valid birthdays to determine if two are the same. These classes work together in a hierarchy to bring this probability theory to life.
+              Simulation creates multiple Experiments, each Experiment runs multiple Trials, and each Trial creates multiple Birthday objects to simulate groups of different sizes.
+              This simulator provides valuable insights into this famously counterintuitive probability theory.
+            </p>
+
+            <p>
+              In implementing the Birthday Paradox simulator, I focused on developing the functionality within the class structure that my partner had worked to establish.
+              My main goal was working to help implement the logic that made each class behave together properly and function successfully.
+              When it came to developing tests for these classes, I worked mainly on testing the Birthday class and the Experiment class.
+              To do this, I implemented Mockito to create mock objects that simulated a variety of different scenarios without relying on randomness, which helped me achieve consistent and reliable test results.
+              Throughout the project, my partner and I utilized pair programming which helped improve the quality of our code and our understanding of the application significantly.
+            </p>
+
+            <p>
+              Throughout this project, I significantly strengthened my Java testing skills, specifically in using mocking to create reliable test environments for processes that are normally random.
+              I gained valuable pair programming experience that helped me develop my communication skills when discussing technical concepts and expressing my ideas during the coding process.
+              Working on the Birthday Paradox Simulator helped me to deepen my understanding of object-oriented design principles, as it challenged me to write clean code and improve upon how I write commit messages.
+            </p>
+          </div>
+
+          <div class="project-section">
+            <img src="images/elevator.jpeg" alt="elevator image" class="img-fluid">
+            <h3>Elevator Simulator</h3>
+
+            <p>
               The Elevator Simulator project involved writing code to develop an elevator simulator that models how different types of elevators operate in a building.
               Each elevator has a unique set of rules including what floors they service and how many passengers can be on an elevator at a time.
               A scheduler assigns the calls to the best elevator available. The simulator moves the elevators on each round and shows what elevators are moving, stopping, or waiting and how many people are on each.
               This project helps to understand how an elevator system functions in real life.
-
-
             </p>
+
             <p>
-              <!--Functional requirements/what the project does-->
               The goal of this project was to write code to simulate how different types of elevators function on buildings with multiple floors using Test Driven Development, maintaining best object-oriented practices, SOLID principles, and clean code in mind.
               The project included 4 different types of elevators: Standard Elevators, Freight Elevators, Pent House Elevator, and Express elevator.
               Each elevator has specific policies that must be kept including how many passengers it can have, when it can accept calls, what floors it can travel to.
+            </p>
+
+            <p>
               For example the Penthouse elevator only travels between the first floor and the top floor. The express elevator skips the middle floors.
               The scheduler assigns new calls to the appropriate elevator based on their current state which includes their position, direction, and occupancy.
               The design of the code follows OOP principles, with a base elevator class that defines the common behavior of all elevators.
+            </p>
+
+            <p>
               The ElevatorFactory creates different elevator types using the factory pattern with specialized subclasses for each specific elevator type and their unique behaviors.
               The Scheduler uses a Strategy design pattern with SimpleScheduler and ComplexScheduler implementations with different algorithm to assign calls to elevators.
               The Simulator controls the program, it initializes the program with 7 command-line arguments. It creates elevators, and runs the simulation in rounds.
               Each round involves assigning calls to the elevators and moving the elevators and continues until all the calls are handled and each of the elevators have returned to the first floor.
-
             </p>
-            In implementing the Elevator simulator, I focused on developing the Elevator abstract class and the specific subclasses. I used Test Driven development to first work
-            on the implementing the abstract Elevator. After I finished with the base Elevator I was able to create the specific subclasses and used override for how the different elevators were able to choose when the accepted calls on not based on their specific qualities.
-            This structure made it easier to expand and test each of the different elevator types individually.
-
 
             <p>
-
+              In implementing the Elevator simulator, I focused on developing the Elevator abstract class and the specific subclasses. I used Test Driven development to first work
+              on the implementing the abstract Elevator. After I finished with the base Elevator I was able to create the specific subclasses and used override for how the different elevators were able to choose when the accepted calls on not based on their specific qualities.
+              This structure made it easier to expand and test each of the different elevator types individually.
             </p>
+
             <p>
               Throughout this project, I strengthened my Test Driven Development Skills by writing tests before implementing the code.
               This strategy helped me to debug my code as I was working on it and develop each part of my program separately.
               My partner and I utilized pair programming which helped both of us give good feedback and constructive comments on each other code and understand the parts of the code each other had written.
             </p>
+          </div>
 
-            <h3 style="font-weight: bold;">Pizza Ordering System</h3>
+          <div class="project-section">
+            <h3>Pizza Ordering System</h3>
+
             <p>
-              <!--Motivation of the project-->
               For our final project for COMP 305 my group wanted to choose a project that would challenge our abilities to use and implement different design patterns we learned about in class.
               We wanted to create a project that allows users to create standard pizzas or make custom pizzas with a variety of toppings while maintaining a clean, and organized structure.
               This project gave us the opportunity to challenge ourselves to implement the Decorator design pattern in Java, which we had not learned how to do in class.
-
             </p>
+
             <p>
-              <!--Functional requirements/what the project does-->
               The Pizza System allows users to choose to either order a Standard Pizza with designated cheese, sauce, and crust's or create a Custom Pizza.
               If a user selects to create a custom pizza the user is able to customize the pizza by selecting from various types of cheeses, sauces, crusts, and toppings.
               We wanted this ordering system to be flexible and customizable:
-              <ol>
-            <li> Start by deciding what type of Pizza you want: (Neapolitan, New York, Chicago, or Custom)
-            <li> If user selects custom: they get to customize their pizza by choosing from the different types of Sauce, Cheese, and Crust
-            <li> Add multiple toppings which update cost calculation
-            <li>View ordered summary, the GUI displays the final cost and description of your pizza
-            <li> Choose a preferred payment method (cash or card)
-          </ol>
-              -
+            </p>
+
+            <ol>
+              <li>Start by deciding what type of Pizza you want: (Neapolitan, New York, Chicago, or Custom)</li>
+              <li>If user selects custom: they get to customize their pizza by choosing from the different types of Sauce, Cheese, and Crust</li>
+              <li>Add multiple toppings which update cost calculation</li>
+              <li>View ordered summary, the GUI displays the final cost and description of your pizza</li>
+              <li>Choose a preferred payment method (cash or card)</li>
+            </ol>
+
+            <p>
               Our Pizza project calculates the costs of your selected pizza's ingredients and generates a description of your delicious pizza including its name, ingredients and any added toppings, and then the user checkouts with their preferred payment method(cash or card).
+            </p>
+
             <p>
-            Our project implements multiple design patterns so that our project architecture is flexible and maintainable.
-            <p>
+              Our project implements multiple design patterns so that our project architecture is flexible and maintainable.
+            </p>
+
             <img src="images/decoratorpattern.png" alt="decorator pattern" class="img-fluid">
 
             <h3>Decorator Pattern</h3>
-            Our pizza program uses the Decorator pattern for adding toppings, which allows for:
+            <p>Our pizza program uses the Decorator pattern for adding toppings, which allows for:</p>
             <ol>
-              <li>Flexibility: Can handle unlimited topping combinations
-              <li>Maintainable: Separates the core pizza functionality from the optional added toppings
-              <li> Extension: We can easily add new toppings in the future without modifying existing code
+              <li>Flexibility: Can handle unlimited topping combinations</li>
+              <li>Maintainable: Separates the core pizza functionality from the optional added toppings</li>
+              <li>Extension: We can easily add new toppings in the future without modifying existing code</li>
             </ol>
-              <p>
 
             <h3>Simple Factory Pattern</h3>
-            Pizza Factory implements the Simple Factory pattern to create standard pizza styles
+            <p>Pizza Factory implements the Simple Factory pattern to create standard pizza styles:</p>
             <ol>
-            <li>Encapsulation: Hides the complexity of creating different styles of pizza
-            <li> Single Responsibility Principle: Keeps pizza creation logic in one place
-            <li>Consistency: Ensures pizzas are created with the correct default ingredients
+              <li>Encapsulation: Hides the complexity of creating different styles of pizza</li>
+              <li>Single Responsibility Principle: Keeps pizza creation logic in one place</li>
+              <li>Consistency: Ensures pizzas are created with the correct default ingredients</li>
             </ol>
-            <p>
 
             <h3>Strategy Pattern</h3>
-            To deal with payment processing, we implemented the Strategy pattern:
+            <p>To deal with payment processing, we implemented the Strategy pattern:</p>
             <ol>
-              <li>Flexibility: Allows users to choose between payment methods (cash or credit)
-              <li>Extension: Easy to add new payments in the future
-              <li>Testability: Able to test payment strategies individually
+              <li>Flexibility: Allows users to choose between payment methods (cash or credit)</li>
+              <li>Extension: Easy to add new payments in the future</li>
+              <li>Testability: Able to test payment strategies individually</li>
             </ol>
-            <p>
 
-            We chose Java for implementation because it is effective for using object-oriented programming to implement design patterns.
-            Java uses interfaces and inheritance to emphasize clear relationships between components, allowing us to make our code maintainable and readable.
             <p>
+              We chose Java for implementation because it is effective for using object-oriented programming to implement design patterns.
+              Java uses interfaces and inheritance to emphasize clear relationships between components, allowing us to make our code maintainable and readable.
+            </p>
 
-            The overall design of our project includes:
+            <p>The overall design of our project includes:</p>
             <ol>
-            <li>Pizza interface: Defines core functionality.
-            <li>SimplePizza: Concrete implementation of Pizza interface.
-            <li>PizzaFactory: Creates standard pizza styles (New York, Chicago, Neapolitan, and Custom)
-            <li>Toppings: Decorator hierarchy that wraps pizzas with additional ingredients
-            <li>Payment Strategies: implement common interface for different payment methods (cash, card)
-          </ol>
+              <li>Pizza interface: Defines core functionality.</li>
+              <li>SimplePizza: Concrete implementation of Pizza interface.</li>
+              <li>PizzaFactory: Creates standard pizza styles (New York, Chicago, Neapolitan, and Custom)</li>
+              <li>Toppings: Decorator hierarchy that wraps pizzas with additional ingredients</li>
+              <li>Payment Strategies: implement common interface for different payment methods (cash, card)</li>
+            </ol>
+
             <p>
               I worked on implementing the core architecture of our project. I focused on:
               The Pizza interface and the SimplePizza concrete class.
               The Toppings decorator base class and the different concrete toppings.
               The Pizza Factory for creating standard styles of pizza.
+            </p>
+
             <p>
               I implemented these features following test-driven development, by writing tests before implementing each feature to ensure they were correct before moving on.
               I have never implemented the Decorator Pattern officially before so this project was a great learning experience for me where I got to challenge my abilities to implement different design patterns together.
-
-
-
-
-
-
-
-          </div>
-        </div>
-      </div>
-      
-
-    </section>
-
-
-    <section class="site-section" id="contact-section" data-aos="fade">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h2 class="section-title mb-3">Contact Me</h2>
-          </div>
-        </div>
-        <div class="row mb-5 text-center">
-
-
-
-          
-          
-          <div class="col-md-12 text-center">
-            <p class="mb-0">
-              <span class="icon-mail_outline d-block h4 text-primary"></span>
-              <a href="mailto:mcope@sandiego.edu">mcope@sandiego.edu</a>
-            </p>
-          </div>
-          
-          <div class="col-md-12 text-center">
-            <p class="mb-0">
-              <span class="icon-graduation-cap d-block h4 text-primary"></span>
-              <a href="files/Maggie_Cope_Resume_March_19.pdf">Resume</a>
             </p>
           </div>
         </div>
-
       </div>
-    </section>
+    </div>
+  </section>
 
-
-    <footer class="site-footer">
-      <div class="container">
-
-          <div class="col-md-12 text-center">
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website builds on a template by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-
-          </div>
-
-
+  <!-- Contact Section -->
+  <section class="site-section" id="contact-section" data-aos="fade">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="section-title mb-3">Contact Me</h2>
+        </div>
       </div>
-    </footer>
+      <div class="row mb-5 text-center">
+        <div class="col-md-12 text-center">
+          <p class="mb-0">
+            <span class="icon-mail_outline d-block h4 text-primary"></span>
+            <a href="mailto:mcope@sandiego.edu">mcope@sandiego.edu</a>
+          </p>
+        </div>
 
-  </div> <!-- .site-wrap -->
+        <div class="col-md-12 text-center">
+          <p class="mb-0">
+            <span class="icon-graduation-cap d-block h4 text-primary"></span>
+            <a href="files/Maggie_Cope_Resume_March_19.pdf">Resume</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-  <script src="js/collapsable.js"></script>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="col-md-12 text-center">
+        <p>
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website builds on a template by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</div> <!-- .site-wrap -->
 
-
-  <script src="js/main.js"></script>
-
-  </body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/collapsable.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
