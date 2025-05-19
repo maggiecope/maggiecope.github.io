@@ -187,7 +187,7 @@
 
 
             </div>
-            <img src="images/elevator.jpg" alt="elevator image" class="img-fluid">
+            <img src="images/elevator.jpeg" alt="elevator image" class="img-fluid">
 
             <h3 style="font-weight: bold;">Elevator Simulator</h3>
             <p>
@@ -227,7 +227,74 @@
               My partner and I utilized pair programming which helped both of us give good feedback and constructive comments on each other code and understand the parts of the code each other had written.
             </p>
 
-            
+            <h3 style="font-weight: bold;">Pizza Ordering System</h3>
+            <p>
+              <!--Motivation of the project-->
+              For our final project for COMP 305 my group wanted to choose a project that would challenge our abilities to use and implement different design patterns we learned about in class.
+              We wanted to create a project that allows users to create standard pizzas or make custom pizzas with a variety of toppings while maintaining a clean, and organized structure.
+              This project gave us the opportunity to challenge ourselves to implement the Decorator design pattern in Java, which we had not learned how to do in class.
+
+            </p>
+            <p>
+              <!--Functional requirements/what the project does-->
+              The Pizza System allows users to choose to either order a Standard Pizza with designated cheese, sauce, and crust's or create a Custom Pizza.
+              If a user selects to create a custom pizza the user is able to customize the pizza by selecting from various types of cheeses, sauces, crusts, and toppings.
+              We wanted this ordering system to be flexible and customizable:
+              - Start by deciding what type of Pizza you want: (Neapolitan, New York, Chicago, or Custom)
+              - If user selects custom: they get to customize their pizza by choosing from the different types of Sauce, Cheese, and Crust
+              - Add multiple toppings which update cost calculation
+              - Get a detailed description of your pizza
+              - Choose a preferred payment method (cash or card)
+              Our Pizza project calculates the costs of your selected pizza's ingredients and generates a description of your delicious pizza including its name, ingredients and any added toppings, and then the user checkouts with their preferred payment method(cash or card).
+            <p>
+            Our project implements multiple design patterns so that our project architecture is flexible and maintainable.
+            <p>
+
+            <h3>Decorator Pattern</h3>
+            Our pizza program uses the Decorator pattern for adding toppings, which allows for:
+            Flexibility: Can handle unlimited topping combinations
+            Maintainable: Separates the core pizza functionality from the optional added toppings
+            Extension: We can easily add new toppings in the future without modifying existing code
+            <p>
+
+            <h3>Simple Factory Pattern</h3>
+            Pizza Factory implements the Simple Factory pattern to create standard pizza styles
+            Encapsulation: Hides the complexity of creating different styles of pizza
+            Single Responsibility Principle: Keeps pizza creation logic in one place
+            Consistency: Ensures pizzas are created with the correct default ingredients
+            <p>
+
+            <h3>Strategy Pattern</h3>
+            To deal with payment processing, we implemented the Strategy pattern:
+            Flexibility: Allows users to choose between payment methods (cash or credit)
+            Extension: Easy to add new payments in the future
+            Testability: Able to test payment strategies individually
+            <p>
+
+            We chose Java for implementation because it is effective for using object-oriented programming to implement design patterns.
+            Java uses interfaces and inheritance to emphasize clear relationships between components, allowing us to make our code maintainable and readable.
+            <p>
+            The overall design of our project includes:
+            Pizza interface: Defines core functionality.
+            SimplePizza: Concrete implementation of Pizza interface.
+            PizzaFactory: Creates standard pizza styles (New York, Chicago, Neapolitan, and Custom)
+            Toppings: Decorator hierarchy that wraps pizzas with additional ingredients
+            Payment Strategies: implement common interface for different payment methods (cash, card)
+
+            <p>
+              I worked on implementing the core architecture of our project. I focused on:
+              The Pizza interface and the SimplePizza concrete class.
+              The Toppings decorator base class and the different concrete toppings.
+              The Pizza Factory for creating standard styles of pizza.
+            <p>
+              I implemented these features following test-driven development, by writing tests before implementing each feature to ensure they were correct before moving on.
+              I have never implemented the Decorator Pattern officially before so this project was a great learning experience for me where I got to challenge my abilities to implement different design patterns together.
+
+
+
+
+
+
 
           </div>
         </div>
